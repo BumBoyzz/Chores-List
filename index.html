@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/favicon-32x32.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/favicon-32x32.png" type="image/x-icon" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5EH3H4LPMK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-5EH3H4LPMK");
+    </script>
     <title>Chores List</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container" id="container">
-        <h1>To-do List</h1>
-        <div class="sec-container">
-            <input type="text" id="userInput" placeholder="Do Dishes">
-            <button id="addChoreBtn">-></button>
-            <button id="removeChoresBtn">✕</button>
-        </div>
-        <div id="showChores">
-        <!-- <p>Eat Chicken</p>
-        <p>Clean kitchen</p>
-        <p>Do laundry</p> -->
-        </div>
+      <h1>To-do List</h1>
+      <div class="sec-container">
+        <input type="text" id="userInput" placeholder="Do Dishes" />
+        <button id="addChoreBtn">-></button>
+        <button id="removeChoresBtn">✕</button>
+      </div>
+      <div id="showChores">
+      </div>
     </div>
     <script src="main.js" type="module"></script>
-</body>
+  </body>
 </html>
