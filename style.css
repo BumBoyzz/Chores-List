@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+    --main-color: #FA5;
+    --secondary-color: #FBDF7C;
+}
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+}
+.container {
+    width: 576px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+.container h1 {
+    font-family: "Concert One", sans-serif;
+    font-size: 4.5rem
+}
+.sec-container {
+    width: 100%;
+    display: flex;
+    gap: 0.25em;
+    justify-content: space-around;
+}
+.sec-container button {
+    border: none;
+    color: #000;
+    border-radius: 10px;
+    line-height: 0;
+    font-size: 1.5em;
+    padding: 1em;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+}
+.sec-container button:nth-of-type(1) {
+    background: var(--secondary-color);
+}
+.sec-container button:nth-of-type(2) {
+    background: var(--main-color);
+}
+.sec-container button:hover {
+    opacity: 0.9;
+}
+.sec-container button:active {
+    opacity: 0.7;
+}
+.sec-container input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: #EEEEEE;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5em;
+    padding: 1em;
+}
+.container p {
+    background: var(--secondary-color);
+    width: 100%;
+    font-size: 1.5em;
+    padding: 1em;
+    text-align: center;
+    margin: 0;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px black;
+}
+.container p:hover {
+    transition: all 0.2s ease;
+    transform: scale(97%);
+    cursor: pointer;
+}
+#showChores {
+    width: 100%;
+}
+.completed {
+    background: #0fb81c !important;
+    color: white !important;
+    text-decoration: line-through;
+}
